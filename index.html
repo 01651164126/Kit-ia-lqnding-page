@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - IA para Tarefas do Dia a Dia</title>
+    <title>IA para Tarefas do Dia a Dia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,18 +13,50 @@
             text-align: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 900px;
             margin: 50px auto;
             padding: 20px;
             background: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        h1 {
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+        }
+        h1, h2 {
             color: #333;
         }
         p {
             color: #666;
+            font-size: 18px;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .benefit-box {
+            width: 30%;
+            padding: 15px;
+            background-color: #eef;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .testimonials {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .testimonial {
+            font-style: italic;
+            color: #333;
         }
         form {
             display: flex;
@@ -52,23 +84,55 @@
 </head>
 <body>
 
+    <header>
+        <h1>Descubra o Poder da IA no Seu Dia a Dia</h1>
+    </header>
+
     <div class="container">
-        <h1>Descubra o Poder da IA para Suas Tarefas!</h1>
-        <p>Aprenda a usar Inteligência Artificial para otimizar seu dia a dia, criar vídeos, copywriting e design de forma automatizada.</p>
+        <section>
+            <h2>O que você vai aprender?</h2>
+            <p>Automatize suas tarefas com inteligência artificial! Aprenda a criar vídeos, copywriting, design e muito mais com IA.</p>
+        </section>
 
-        <h2>Entre em Contato</h2>
-        <form action="https://formspree.io/f/cd32fab5656f4d1d86570c55388d0388" method="POST">
-            <label for="name">Seu Nome:</label>
-            <input type="text" id="name" name="name" required>
+        <section>
+            <h2>Benefícios</h2>
+            <div class="benefits">
+                <div class="benefit-box">
+                    <h3>Mais Produtividade</h3>
+                    <p>Reduza o tempo gasto em tarefas repetitivas.</p>
+                </div>
+                <div class="benefit-box">
+                    <h3>Resultados Profissionais</h3>
+                    <p>Crie conteúdos incríveis sem esforço.</p>
+                </div>
+                <div class="benefit-box">
+                    <h3>Ferramentas Poderosas</h3>
+                    <p>Use IA para melhorar seus negócios e projetos.</p>
+                </div>
+            </div>
+        </section>
 
-            <label for="email">Seu E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <section class="testimonials">
+            <h2>O que dizem nossos alunos?</h2>
+            <p class="testimonial">"Aprendi a usar IA para gerar textos incríveis! Recomendo." - João Silva</p>
+            <p class="testimonial">"Economizei horas de trabalho automatizando tarefas com IA!" - Maria Oliveira</p>
+        </section>
 
-            <label for="message">Sua Mensagem:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <section>
+            <h2>Entre em Contato</h2>
+            <form action="https://formspree.io/f/cd32fab5656f4d1d86570c55388d0388" method="POST">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" required>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Sua Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </div>
 
 </body>
